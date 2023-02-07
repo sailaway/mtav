@@ -1,0 +1,50 @@
+{
+    "width": 480,
+    "height": 480,
+    "bgFile":"",
+    "bgColor":"#000000",
+    "frameCount":120,
+    "fps":24,
+    "outVideoFile":"~/Downloads/video-move.mp4",
+    "trackers":[{
+            "trackType":"simpleVideo",
+            "startFrame":0,
+            "endFrame":120,
+            "input":{
+                "video":"~/Downloads/上海.mp4"
+            },
+            "initProperties":{
+                "videoAlignPtX":0,
+                "videoAlignPtY":0,
+                "trackerAlignPtX":0,
+                "trackerAlignPtY":0,
+                "alpha":1,
+                "scale":0.5,
+                "rotate":0,
+                "videoFrameIdx": 0
+            },
+            "animation":[
+                {
+                    "property": "videoAlignPtX",
+                    "startVal": 0,
+                    "endVal": 1,
+                    "startOffsetFrame":0,
+                    "endOffsetFrame":120,
+                    "interpolator":{
+                        "interType":"linear"
+                    }
+                },
+                {
+                  "property": "videoFrameIdx",
+                  "startVal": 0,
+                  "endVal": 120,
+                  "startOffsetFrame":0,
+                  "endOffsetFrame":120,
+                  "interpolator":{
+                    "interType":"linear"
+                  }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "width": 428,
+    "height": 428,
+    "bgFile":"",
+    "bgColor":"#fff",
+    "frameCount":120,
+    "fps":24,
+    "outVideoFile":"~/Downloads/image-rotate.mp4",
+    "trackers":[{
+            "trackType":"simpleImage",
+            "startFrame":0,
+            "endFrame":120,
+            "input":{
+                "image":"~/Downloads/6548-dst-50.jpg"
+            },
+            "initProperties":{
+                "videoAlignPtX":0.5,
+                "videoAlignPtY":0.5,
+                "trackerAlignPtX":0.5,
+                "trackerAlignPtY":0.5,
+                "alpha":1,
+                "scale":1,
+                "rotate":0
+            },
+            "animation":[
+                {
+                    "property": "rotate",
+                    "startVal": 0,
+                    "endVal": 3600,
+                    "startOffsetFrame":0,
+                    "endOffsetFrame":120,
+                    "interpolator":{
+                        "interType":"linear"
+                    }
+                }
+            ]
+        }
+    ]
+}

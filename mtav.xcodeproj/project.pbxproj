@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7138C7222992AFE6004259E9 /* Commands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C7022992AFE6004259E9 /* Commands.cpp */; };
+		7138C7242992AFE6004259E9 /* SimpleVideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C70C2992AFE6004259E9 /* SimpleVideo.cpp */; };
+		7138C7262992AFE6004259E9 /* SimpleImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C70E2992AFE6004259E9 /* SimpleImage.cpp */; };
+		7138C7272992AFE6004259E9 /* MultiTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C7102992AFE6004259E9 /* MultiTracker.cpp */; };
+		7138C7282992AFE6004259E9 /* MultiTrackerVideoGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C7122992AFE6004259E9 /* MultiTrackerVideoGen.cpp */; };
+		7138C7292992AFE6004259E9 /* MutilTrackerGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C7202992AFE6004259E9 /* MutilTrackerGen.cpp */; };
+		7138C72A2992AFE6004259E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C7212992AFE6004259E9 /* main.cpp */; };
+		7138C7372992BD26004259E9 /* jsonxx.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7138C7332992BD26004259E9 /* jsonxx.cc */; };
+		7138C73B2992BD7C004259E9 /* cvutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C73A2992BD7C004259E9 /* cvutil.cpp */; };
+		7138C73E2992BDEC004259E9 /* ImageProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C73C2992BDEC004259E9 /* ImageProcess.cpp */; };
+		7138C7412992BE1B004259E9 /* strutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C73F2992BE1B004259E9 /* strutil.cpp */; };
+		7138C7442992BED3004259E9 /* planeTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C7422992BED3004259E9 /* planeTransform.cpp */; };
+		7138C74D2992BF4A004259E9 /* algutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7138C74B2992BF4A004259E9 /* algutils.cpp */; };
+		7138C7542992C020004259E9 /* libopencv_core.4.5.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7138C7502992C020004259E9 /* libopencv_core.4.5.2.dylib */; };
+		7138C7552992C020004259E9 /* libopencv_imgproc.4.5.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7138C7512992C020004259E9 /* libopencv_imgproc.4.5.2.dylib */; };
+		7138C7562992C020004259E9 /* libopencv_videoio.4.5.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7138C7522992C020004259E9 /* libopencv_videoio.4.5.2.dylib */; };
+		7138C7592992C06A004259E9 /* libopencv_highgui.4.5.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7138C7582992C06A004259E9 /* libopencv_highgui.4.5.2.dylib */; };
+		7138C75B2992C0AA004259E9 /* libopencv_imgcodecs.4.5.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7138C75A2992C0AA004259E9 /* libopencv_imgcodecs.4.5.2.dylib */; };
+		7138C75F2992C9CB004259E9 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 7138C75E2992C9CB004259E9 /* Makefile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		716376E52992A71F008F38BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7138C7022992AFE6004259E9 /* Commands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Commands.cpp; sourceTree = "<group>"; };
+		7138C7032992AFE6004259E9 /* Commands.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Commands.hpp; sourceTree = "<group>"; };
+		7138C7052992AFE6004259E9 /* MultiTrackerVideoGen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MultiTrackerVideoGen.hpp; sourceTree = "<group>"; };
+		7138C7082992AFE6004259E9 /* SimpleImage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleImage.hpp; sourceTree = "<group>"; };
+		7138C70A2992AFE6004259E9 /* SimpleVideo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleVideo.hpp; sourceTree = "<group>"; };
+		7138C70C2992AFE6004259E9 /* SimpleVideo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleVideo.cpp; sourceTree = "<group>"; };
+		7138C70E2992AFE6004259E9 /* SimpleImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleImage.cpp; sourceTree = "<group>"; };
+		7138C70F2992AFE6004259E9 /* Animation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Animation.hpp; sourceTree = "<group>"; };
+		7138C7102992AFE6004259E9 /* MultiTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiTracker.cpp; sourceTree = "<group>"; };
+		7138C7112992AFE6004259E9 /* MultiTracker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MultiTracker.hpp; sourceTree = "<group>"; };
+		7138C7122992AFE6004259E9 /* MultiTrackerVideoGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiTrackerVideoGen.cpp; sourceTree = "<group>"; };
+		7138C7142992AFE6004259E9 /* Anticipate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Anticipate.hpp; sourceTree = "<group>"; };
+		7138C7152992AFE6004259E9 /* Overshoot.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Overshoot.hpp; sourceTree = "<group>"; };
+		7138C7162992AFE6004259E9 /* AnticipateOvershoot.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnticipateOvershoot.hpp; sourceTree = "<group>"; };
+		7138C7172992AFE6004259E9 /* Bounce.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bounce.hpp; sourceTree = "<group>"; };
+		7138C7182992AFE6004259E9 /* Accelerate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Accelerate.hpp; sourceTree = "<group>"; };
+		7138C7192992AFE6004259E9 /* Shake.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shake.hpp; sourceTree = "<group>"; };
+		7138C71A2992AFE6004259E9 /* AccelerateDecelerate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AccelerateDecelerate.hpp; sourceTree = "<group>"; };
+		7138C71B2992AFE6004259E9 /* Cycle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Cycle.hpp; sourceTree = "<group>"; };
+		7138C71C2992AFE6004259E9 /* Decelerate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Decelerate.hpp; sourceTree = "<group>"; };
+		7138C71D2992AFE6004259E9 /* Linear.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Linear.hpp; sourceTree = "<group>"; };
+		7138C71F2992AFE6004259E9 /* MutilTrackerGen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MutilTrackerGen.hpp; sourceTree = "<group>"; };
+		7138C7202992AFE6004259E9 /* MutilTrackerGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MutilTrackerGen.cpp; sourceTree = "<group>"; };
+		7138C7212992AFE6004259E9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7138C72B2992BB37004259E9 /* MtavCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MtavCommand.hpp; sourceTree = "<group>"; };
+		7138C72C2992BB37004259E9 /* cmdline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmdline.h; sourceTree = "<group>"; };
+		7138C72D2992BB6D004259E9 /* precomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = precomp.h; sourceTree = "<group>"; };
+		7138C7332992BD26004259E9 /* jsonxx.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsonxx.cc; sourceTree = "<group>"; };
+		7138C7342992BD26004259E9 /* jsonxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonxx.h; sourceTree = "<group>"; };
+		7138C7392992BD7C004259E9 /* cvutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cvutil.hpp; sourceTree = "<group>"; };
+		7138C73A2992BD7C004259E9 /* cvutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cvutil.cpp; sourceTree = "<group>"; };
+		7138C73C2992BDEC004259E9 /* ImageProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageProcess.cpp; sourceTree = "<group>"; };
+		7138C73D2992BDEC004259E9 /* ImageProcess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageProcess.hpp; sourceTree = "<group>"; };
+		7138C73F2992BE1B004259E9 /* strutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strutil.cpp; sourceTree = "<group>"; };
+		7138C7402992BE1B004259E9 /* strutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strutil.hpp; sourceTree = "<group>"; };
+		7138C7422992BED3004259E9 /* planeTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = planeTransform.cpp; sourceTree = "<group>"; };
+		7138C7432992BED3004259E9 /* planeTransform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = planeTransform.hpp; sourceTree = "<group>"; };
+		7138C74B2992BF4A004259E9 /* algutils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = algutils.cpp; sourceTree = "<group>"; };
+		7138C74C2992BF4A004259E9 /* algutils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = algutils.hpp; sourceTree = "<group>"; };
+		7138C74F2992C020004259E9 /* libopencv_img_hash.4.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_img_hash.4.5.2.dylib; path = ../../../../../usr/local/Cellar/opencv/4.5.2_1/lib/libopencv_img_hash.4.5.2.dylib; sourceTree = "<group>"; };
+		7138C7502992C020004259E9 /* libopencv_core.4.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.4.5.2.dylib; path = ../../../../../usr/local/Cellar/opencv/4.5.2_1/lib/libopencv_core.4.5.2.dylib; sourceTree = "<group>"; };
+		7138C7512992C020004259E9 /* libopencv_imgproc.4.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.4.5.2.dylib; path = ../../../../../usr/local/Cellar/opencv/4.5.2_1/lib/libopencv_imgproc.4.5.2.dylib; sourceTree = "<group>"; };
+		7138C7522992C020004259E9 /* libopencv_videoio.4.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.4.5.2.dylib; path = ../../../../../usr/local/Cellar/opencv/4.5.2_1/lib/libopencv_videoio.4.5.2.dylib; sourceTree = "<group>"; };
+		7138C7582992C06A004259E9 /* libopencv_highgui.4.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.4.5.2.dylib; path = ../../../../../usr/local/Cellar/opencv/4.5.2_1/lib/libopencv_highgui.4.5.2.dylib; sourceTree = "<group>"; };
+		7138C75A2992C0AA004259E9 /* libopencv_imgcodecs.4.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.4.5.2.dylib; path = ../../../../../usr/local/Cellar/opencv/4.5.2_1/lib/libopencv_imgcodecs.4.5.2.dylib; sourceTree = "<group>"; };
+		7138C75E2992C9CB004259E9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		716376E72992A71F008F38BC /* mtav */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mtav; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		716376E42992A71F008F38BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7138C75B2992C0AA004259E9 /* libopencv_imgcodecs.4.5.2.dylib in Frameworks */,
+				7138C7592992C06A004259E9 /* libopencv_highgui.4.5.2.dylib in Frameworks */,
+				7138C7542992C020004259E9 /* libopencv_core.4.5.2.dylib in Frameworks */,
+				7138C7552992C020004259E9 /* libopencv_imgproc.4.5.2.dylib in Frameworks */,
+				7138C7562992C020004259E9 /* libopencv_videoio.4.5.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7138C7012992AFE6004259E9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7138C7382992BD7C004259E9 /* utils */,
+				7138C72E2992BD26004259E9 /* jsonxx */,
+				7138C71E2992AFE6004259E9 /* commands */,
+				7138C7042992AFE6004259E9 /* multiTracker */,
+				7138C72D2992BB6D004259E9 /* precomp.h */,
+				7138C72C2992BB37004259E9 /* cmdline.h */,
+				7138C72B2992BB37004259E9 /* MtavCommand.hpp */,
+				7138C7022992AFE6004259E9 /* Commands.cpp */,
+				7138C7032992AFE6004259E9 /* Commands.hpp */,
+				7138C7212992AFE6004259E9 /* main.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7138C7042992AFE6004259E9 /* multiTracker */ = {
+			isa = PBXGroup;
+			children = (
+				7138C7052992AFE6004259E9 /* MultiTrackerVideoGen.hpp */,
+				7138C7062992AFE6004259E9 /* trakers */,
+				7138C70F2992AFE6004259E9 /* Animation.hpp */,
+				7138C7102992AFE6004259E9 /* MultiTracker.cpp */,
+				7138C7112992AFE6004259E9 /* MultiTracker.hpp */,
+				7138C7122992AFE6004259E9 /* MultiTrackerVideoGen.cpp */,
+				7138C7132992AFE6004259E9 /* interpolators */,
+			);
+			path = multiTracker;
+			sourceTree = "<group>";
+		};
+		7138C7062992AFE6004259E9 /* trakers */ = {
+			isa = PBXGroup;
+			children = (
+				7138C7082992AFE6004259E9 /* SimpleImage.hpp */,
+				7138C70A2992AFE6004259E9 /* SimpleVideo.hpp */,
+				7138C70C2992AFE6004259E9 /* SimpleVideo.cpp */,
+				7138C70E2992AFE6004259E9 /* SimpleImage.cpp */,
+			);
+			path = trakers;
+			sourceTree = "<group>";
+		};
+		7138C7132992AFE6004259E9 /* interpolators */ = {
+			isa = PBXGroup;
+			children = (
+				7138C7142992AFE6004259E9 /* Anticipate.hpp */,
+				7138C7152992AFE6004259E9 /* Overshoot.hpp */,
+				7138C7162992AFE6004259E9 /* AnticipateOvershoot.hpp */,
+				7138C7172992AFE6004259E9 /* Bounce.hpp */,
+				7138C7182992AFE6004259E9 /* Accelerate.hpp */,
+				7138C7192992AFE6004259E9 /* Shake.hpp */,
+				7138C71A2992AFE6004259E9 /* AccelerateDecelerate.hpp */,
+				7138C71B2992AFE6004259E9 /* Cycle.hpp */,
+				7138C71C2992AFE6004259E9 /* Decelerate.hpp */,
+				7138C71D2992AFE6004259E9 /* Linear.hpp */,
+			);
+			path = interpolators;
+			sourceTree = "<group>";
+		};
+		7138C71E2992AFE6004259E9 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				7138C71F2992AFE6004259E9 /* MutilTrackerGen.hpp */,
+				7138C7202992AFE6004259E9 /* MutilTrackerGen.cpp */,
+			);
+			path = commands;
+			sourceTree = "<group>";
+		};
+		7138C72E2992BD26004259E9 /* jsonxx */ = {
+			isa = PBXGroup;
+			children = (
+				7138C7332992BD26004259E9 /* jsonxx.cc */,
+				7138C7342992BD26004259E9 /* jsonxx.h */,
+			);
+			path = jsonxx;
+			sourceTree = "<group>";
+		};
+		7138C7382992BD7C004259E9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7138C74B2992BF4A004259E9 /* algutils.cpp */,
+				7138C74C2992BF4A004259E9 /* algutils.hpp */,
+				7138C7422992BED3004259E9 /* planeTransform.cpp */,
+				7138C7432992BED3004259E9 /* planeTransform.hpp */,
+				7138C73F2992BE1B004259E9 /* strutil.cpp */,
+				7138C7402992BE1B004259E9 /* strutil.hpp */,
+				7138C73C2992BDEC004259E9 /* ImageProcess.cpp */,
+				7138C73D2992BDEC004259E9 /* ImageProcess.hpp */,
+				7138C7392992BD7C004259E9 /* cvutil.hpp */,
+				7138C73A2992BD7C004259E9 /* cvutil.cpp */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		7138C74E2992C01F004259E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7138C75A2992C0AA004259E9 /* libopencv_imgcodecs.4.5.2.dylib */,
+				7138C7582992C06A004259E9 /* libopencv_highgui.4.5.2.dylib */,
+				7138C7502992C020004259E9 /* libopencv_core.4.5.2.dylib */,
+				7138C74F2992C020004259E9 /* libopencv_img_hash.4.5.2.dylib */,
+				7138C7512992C020004259E9 /* libopencv_imgproc.4.5.2.dylib */,
+				7138C7522992C020004259E9 /* libopencv_videoio.4.5.2.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		716376DE2992A71F008F38BC = {
+			isa = PBXGroup;
+			children = (
+				7138C7012992AFE6004259E9 /* src */,
+				7138C75E2992C9CB004259E9 /* Makefile */,
+				716376E82992A71F008F38BC /* Products */,
+				7138C74E2992C01F004259E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		716376E82992A71F008F38BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				716376E72992A71F008F38BC /* mtav */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		716376E62992A71F008F38BC /* mtav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716376EE2992A71F008F38BC /* Build configuration list for PBXNativeTarget "mtav" */;
+			buildPhases = (
+				716376E32992A71F008F38BC /* Sources */,
+				716376E42992A71F008F38BC /* Frameworks */,
+				716376E52992A71F008F38BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mtav;
+			productName = mtav;
+			productReference = 716376E72992A71F008F38BC /* mtav */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		716376DF2992A71F008F38BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = zhiyanxx;
+				TargetAttributes = {
+					716376E62992A71F008F38BC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 716376E22992A71F008F38BC /* Build configuration list for PBXProject "mtav" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 716376DE2992A71F008F38BC;
+			productRefGroup = 716376E82992A71F008F38BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				716376E62992A71F008F38BC /* mtav */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		716376E32992A71F008F38BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7138C7282992AFE6004259E9 /* MultiTrackerVideoGen.cpp in Sources */,
+				7138C73E2992BDEC004259E9 /* ImageProcess.cpp in Sources */,
+				7138C7242992AFE6004259E9 /* SimpleVideo.cpp in Sources */,
+				7138C73B2992BD7C004259E9 /* cvutil.cpp in Sources */,
+				7138C72A2992AFE6004259E9 /* main.cpp in Sources */,
+				7138C74D2992BF4A004259E9 /* algutils.cpp in Sources */,
+				7138C7372992BD26004259E9 /* jsonxx.cc in Sources */,
+				7138C7262992AFE6004259E9 /* SimpleImage.cpp in Sources */,
+				7138C7292992AFE6004259E9 /* MutilTrackerGen.cpp in Sources */,
+				7138C7272992AFE6004259E9 /* MultiTracker.cpp in Sources */,
+				7138C7222992AFE6004259E9 /* Commands.cpp in Sources */,
+				7138C7412992BE1B004259E9 /* strutil.cpp in Sources */,
+				7138C75F2992C9CB004259E9 /* Makefile in Sources */,
+				7138C7442992BED3004259E9 /* planeTransform.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		716376EC2992A71F008F38BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/opencv/4.5.2_1/include/opencv4;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/4.5.2_1/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		716376ED2992A71F008F38BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/opencv/4.5.2_1/include/opencv4;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/4.5.2_1/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		716376EF2992A71F008F38BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		716376F02992A71F008F38BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		716376E22992A71F008F38BC /* Build configuration list for PBXProject "mtav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716376EC2992A71F008F38BC /* Debug */,
+				716376ED2992A71F008F38BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716376EE2992A71F008F38BC /* Build configuration list for PBXNativeTarget "mtav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716376EF2992A71F008F38BC /* Debug */,
+				716376F02992A71F008F38BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 716376DF2992A71F008F38BC /* Project object */;
+}
