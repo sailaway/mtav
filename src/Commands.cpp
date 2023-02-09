@@ -15,7 +15,7 @@
 vector<string> supportedCommand(){
     vector<string> commands;
     commands.push_back(COMMAND_MTAV_GEN);
-    commands.push_back(COMMAND_MTAV_FRAME);
+    //commands.push_back(COMMAND_MTAV_FRAME);
     
     return commands;
 }

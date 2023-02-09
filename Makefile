@@ -2,10 +2,10 @@ CC=gcc
 CPP=g++
 #CFLAGS+=-g
 #CFLAGS+='-D DEBUG=1'
-CFLAGS+=`pkg-config --cflags opencv`
 CFLAGS+='-std=c++11'
 CFLAGS+='-O3'
 CFLAGS+='-D RELEASE_BUILD=1'
+CFLAGS+=`pkg-config --cflags opencv`
 LDFLAGS+=`pkg-config --libs opencv`
 
 .PHONY: all clean
@@ -32,7 +32,7 @@ $(PROG): $(OBJS)
 	$(CPP) -c $(CFLAGS) $< -o $@
 
 install : $(PROG)
-	cp -f $(PROG) ./bin/
+	mv -f $(PROG) ./bin/
 
 all: $(PROG)
 
