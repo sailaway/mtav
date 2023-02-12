@@ -141,9 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				7138C7082992AFE6004259E9 /* SimpleImage.hpp */,
+				7138C70E2992AFE6004259E9 /* SimpleImage.cpp */,
 				7138C70A2992AFE6004259E9 /* SimpleVideo.hpp */,
 				7138C70C2992AFE6004259E9 /* SimpleVideo.cpp */,
-				7138C70E2992AFE6004259E9 /* SimpleImage.cpp */,
 			);
 			path = trakers;
 			sourceTree = "<group>";
