@@ -169,7 +169,7 @@ trackers 是一个轨道列表，trackers中每一个元素定义一条轨道，
 
 - 插值器(interpolator)
     
-    描述属性值从开始值到结束值的变化过程。
+    描述属性值从开始值到结束值的变化过程。常见插值器如： 线性插值器(liear)、加速插值器(accelerate)、减速插值器(decelerate)等
     
 
 ## 文档
