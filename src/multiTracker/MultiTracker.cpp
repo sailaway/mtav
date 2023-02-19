@@ -45,11 +45,10 @@ bool TrackerBase::initAnimations(){
 }
 
 bool TrackerBase::commonCheckAndInit(){
-    if (!_trackerCfg.has<Number>("startFrame") || !_trackerCfg.has<Number>("endFrame")) {
+    if (!getObjectNumberVal(_trackerCfg, "startFrame", _startFrame)
+        || !getObjectNumberVal(_trackerCfg, "endFrame", _endFrame)) {
         return false;
     }
-    _startFrame = _trackerCfg.get<Number>("startFrame");
-    _endFrame   = _trackerCfg.get<Number>("endFrame");
     
     vector<string> keys = requiredInputKeys();
     if (!keys.empty()) {
@@ -120,15 +119,19 @@ int TrackerBase::getInitPropertiesIntVal(string key,int defaultVal){
     if (!_trackerCfg.has<Object>("initProperties")) {
         return defaultVal;
     }
+    int val = defaultVal;
     Object initProperties = _trackerCfg.get<Object>("initProperties");
-    return initProperties.get<Number>(key, defaultVal);
+    getObjectNumberVal(initProperties, key, val);
+    return val;
 }
 double TrackerBase::getInitPropertiesDoubleVal(string key,double defaultVal){
     if (!_trackerCfg.has<Object>("initProperties")) {
         return defaultVal;
     }
+    double val = defaultVal;
     Object initProperties = _trackerCfg.get<Object>("initProperties");
-    return initProperties.get<Number>(key, defaultVal);
+    getObjectNumberVal(initProperties, key, val);
+    return val;
 }
 
 double TrackerBase::getPropertyValByOffsetFrame(string property,int offsetFrame,double defaultVal){
@@ -238,63 +241,46 @@ Interpolator* getInterpolatorByCfg(Object interCfgObj){
     
     if (interType == INTER_TYPE_ACCELERATE) {
         AccelerateInterpolator *interpolator = new AccelerateInterpolator();
-        if (interCfgObj.has<Number>("factor")) {
-            interpolator->_factor = interCfgObj.get<Number>("factor");
-        }
-        if (interCfgObj.has<Number>("doubleFactor")) {
-            interpolator->_doubleFactor = interCfgObj.get<Number>("doubleFactor");
-        }
+        getObjectNumberVal(interCfgObj, "factor", interpolator->_factor);
+        getObjectNumberVal(interCfgObj, "doubleFactor", interpolator->_doubleFactor);
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_ACCELERATEDECELERATE) {
         AccelerateDecelerateInterpolator *interpolator = new AccelerateDecelerateInterpolator();
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_ANTICIPATE) {
         AnticipateInterpolator *interpolator = new AnticipateInterpolator();
-        if (interCfgObj.has<Number>("tension")) {
-            interpolator->_tension = interCfgObj.get<Number>("tension");
-        }
+        getObjectNumberVal(interCfgObj, "tension", interpolator->_tension);
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_ANTICIPATEOVERSHOOT) {
         AnticipateOvershootInterpolator *interpolator = new AnticipateOvershootInterpolator();
-        if (interCfgObj.has<Number>("tension")) {
-            interpolator->_tension = interCfgObj.get<Number>("tension");
-        }
+        getObjectNumberVal(interCfgObj, "tension", interpolator->_tension);
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_BOUNCE) {
         BounceInterpolator *interpolator = new BounceInterpolator();
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_CYCLE) {
         CycleInterpolator *interpolator = new CycleInterpolator();
-        if (interCfgObj.has<Number>("cycles")) {
-            interpolator->_cycles = interCfgObj.get<Number>("cycles");
-        }
+        getObjectNumberVal(interCfgObj, "cycles", interpolator->_cycles);
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_DECELERATE) {
         DecelerateInterpolator *interpolator = new DecelerateInterpolator();
-        if (interCfgObj.has<Number>("factor")) {
-            interpolator->_factor = interCfgObj.get<Number>("factor");
-        }
+        getObjectNumberVal(interCfgObj, "factor", interpolator->_factor);
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_OVERSHOOT) {
         OvershootInterpolator *interpolator = new OvershootInterpolator();
-        if (interCfgObj.has<Number>("tension")) {
-            interpolator->_tension = interCfgObj.get<Number>("tension");
-        }
+        getObjectNumberVal(interCfgObj, "tension", interpolator->_tension);
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_LINEAR) {
         LinearInterpolator *interpolator = new LinearInterpolator();
         return static_cast<Interpolator *>(interpolator);
     } else if (interType == INTER_TYPE_SHAKE) {
         ShakeInterpolator *interpolator = new ShakeInterpolator();
-        if (interCfgObj.has<Number>("shakeCycle")) {
-            interpolator->_shakeCycle = interCfgObj.get<Number>("shakeCycle");
-        }
+        getObjectNumberVal(interCfgObj, "shakeCycle", interpolator->_shakeCycle);
         if (interpolator->_shakeCycle <= 1) {
             interpolator->_shakeCycle = 2;
         }
-        if (interCfgObj.has<Number>("friction")) {
-            interpolator->_friction = interCfgObj.get<Number>("friction");
-        } else {
+        bool ok = getObjectNumberVal(interCfgObj, "friction", interpolator->_friction);
+        if (!ok) {
             double h = 2 * interpolator->_shakeCycle-1;
             interpolator->_friction = (h-1)/h;
         }

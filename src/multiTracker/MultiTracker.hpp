@@ -52,25 +52,40 @@ public:
 };
 
 inline bool getObjectNumberVal(Object obj,string key,int &val){
-    if (!obj.has<Number>(key)) {
-        return false;
+    if (obj.has<Number>(key)) {
+        val = obj.get<Number>(key);
+        return true;
     }
-    val = obj.get<Number>(key);
-    return true;
+    if (obj.has<String>(key)) {
+        string str = obj.get<String>(key);
+        val = atoi(str.c_str());
+        return true;
+    }
+    return false;
 };
 inline bool getObjectNumberVal(Object obj,string key,float &val){
-    if (!obj.has<Number>(key)) {
-        return false;
+    if (obj.has<Number>(key)) {
+        val = obj.get<Number>(key);
+        return true;
     }
-    val = obj.get<Number>(key);
-    return true;
+    if (obj.has<String>(key)) {
+        string str = obj.get<String>(key);
+        val = atof(str.c_str());
+        return true;
+    }
+    return false;
 };
 inline bool getObjectNumberVal(Object obj,string key,double &val){
-    if (!obj.has<Number>(key)) {
-        return false;
+    if (obj.has<Number>(key)) {
+        val = obj.get<Number>(key);
+        return true;
     }
-    val = obj.get<Number>(key);
-    return true;
+    if (obj.has<String>(key)) {
+        string str = obj.get<String>(key);
+        val = atof(str.c_str());
+        return true;
+    }
+    return false;
 };
 inline bool getObjectStringVal(Object obj,string key,string &val){
     if (!obj.has<string>(key)) {
