@@ -197,7 +197,10 @@ MatPos TrackerBase::process(int offsetFrame,int videoW,int videoH){
             cv::Mat alphaChannel = channels[3];
             alphaChannel *= alpha;
             channels[3] = alphaChannel;
-            cv::merge(channels,mat);
+            // 不能叠加到原来的mat上
+            cv::Mat dst;
+            cv::merge(channels,dst);
+            mat = dst;
         }
     }
     
