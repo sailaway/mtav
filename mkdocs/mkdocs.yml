@@ -1,0 +1,9 @@
+site_name: MTAV - 多轨道视频生成器
+site_url: http://open.zhiyanxx.com/
+nav:
+    - MTAV: index.md
+    - 基础轨道: tracker.md
+    - 高级轨道: advance-tracker.md
+
+theme: readthedocs
+

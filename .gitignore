@@ -154,3 +154,5 @@ fastlane/test_output
 
 .DS_Store
 /bin
+
+mkdocs/site
