@@ -1,9 +1,23 @@
 site_name: MTAV - 多轨道视频生成器
 site_url: http://open.zhiyanxx.com/
 nav:
-    - MTAV: index.md
-    - 基础轨道: tracker.md
-    - 高级轨道: advance-tracker.md
+    - 介绍:
+        - MTAV介绍: index.md
+        - 编译和安装: install.md
+        - 快速开始: quick-start.md
+        - 贡献和捐赠: contribute.md
+    - 配置文件: 
+        - 配置文件概述: config-file.md
+        - 基础属性配置: base-config.md
+        - 轨道配置: tracker-config.md
+        - 插值器: interpolator.md
+    - 基本轨道类型: 
+        - 简单图像轨道: simple-image.md
+        - 简单视频轨道: simple-video.md
+    - 高级轨道: 
+        - 全景专业轨道: sphere-advance-tracker.md
+    - 配置文件示例: 
+        - 漂浮LOGO: examle-animation-logo.md
 
 theme: readthedocs
 

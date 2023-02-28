@@ -1,17 +1,11 @@
-# 多轨道视频生成器
+
+![MTAV logo](img/mtav-black.png)
+
+# [MTAV - 多轨道动画视频生成器](https://github.com/sailaway/mtav)
+
+MTAV 是一个多轨道视频内容合成工具，每条轨道在不同的时间点根据对应的属性生成视频画面，通过定义属性随着时间的变化过程生成动态视频内容。最终所有轨道内容组合生成最终的视频画面。
+
+MTAV通过JSON格式快速定义和描述视频元素的展现属性和视频元素的动画过程，然后通过MTAV将该配置生成视频。通过MTAV可快速定义和生成视频动画。
 
 
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

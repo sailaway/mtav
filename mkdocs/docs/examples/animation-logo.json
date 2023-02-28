@@ -1,0 +1,47 @@
+{
+    "bgColor": "#aaa",
+    "width": 360,
+    "height": 480,
+    "fps": 24,
+    "frameCount": 120,
+    "outVideoFile":"animation-logo.mp4",
+    "trackers": [{
+        "startFrame": 0,
+        "endFrame": 120,
+        "trackType": "simpleImage",
+        "initProperties": {
+            "videoAlignPtX": 0,
+            "videoAlignPtY": 0,
+            "trackerAlignPtX": 0,
+            "trackerAlignPtY": 0,
+            "alpha": 0.8,
+            "scale": 1,
+            "rotate": 0
+        },
+        "input": {
+            "image": "animation-logo.png"
+        },
+        "animation": [
+            {
+                "property": "videoAlignPtX",
+                "startVal": "0",
+                "endVal": "1",
+                "startOffsetFrame": 0,
+                "endOffsetFrame": 120,
+                "interpolator": {
+                    "interType": "accelerateDecelerate"
+                }
+            },
+            {
+                "property": "videoAlignPtY",
+                "startVal": "0",
+                "endVal": "1",
+                "startOffsetFrame": 0,
+                "endOffsetFrame": 120,
+                "interpolator": {
+                    "interType": "accelerateDecelerate"
+                }
+            }
+        ]
+    }],
+}
