@@ -9,5 +9,5 @@ MTAV通过JSON格式快速定义和描述视频元素的展现属性和视频元
 
 MTAV 已经在github上开源，你可以通过点击下面的链接获取MTAV的源码。
 
-[MTAV](https://github.com/sailaway/mtav)
+[MTAV GitHub项目地址](https://github.com/sailaway/mtav)
 
