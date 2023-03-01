@@ -14,8 +14,6 @@ nav:
     - 基本轨道类型: 
         - 简单图像轨道: simple-image.md
         - 简单视频轨道: simple-video.md
-    - 高级轨道: 
-        - 全景专业轨道: sphere-advance-tracker.md
     - 配置文件示例: 
         - 漂浮LOGO: examle-animation-logo.md
 
