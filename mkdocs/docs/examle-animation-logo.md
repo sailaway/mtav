@@ -10,6 +10,7 @@
 
 即可生成如下视频： 
 
-[查看生成视频](examples/animation-logo.mp4)
+
+<iframe src="/examples/animation-logo.mp4" style="width: 360px;height: 480px;" allowfullscreen></iframe>
 
 
