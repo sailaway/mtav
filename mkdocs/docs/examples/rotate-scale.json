@@ -1,0 +1,57 @@
+{
+    "bgColor": "#aaa",
+    "width": 360,
+    "height": 480,
+    "fps": 24,
+    "frameCount": 120,
+    "outVideoFile":"rotate-scale.mp4",
+    "trackers": [{
+        "startFrame": 0,
+        "endFrame": 120,
+        "trackType": "simpleImage",
+        "initProperties": {
+            "videoAlignPtX": 0.5,
+            "videoAlignPtY": 0.5,
+            "trackerAlignPtX": 0.5,
+            "trackerAlignPtY": 0.5,
+            "alpha": 0.8,
+            "scale": 1,
+            "rotate": 0
+        },
+        "input": {
+            "image": "bg.jpg"
+        },
+        "animation": [
+            {
+                "property": "rotate",
+                "startVal": "0",
+                "endVal": "1440",
+                "startOffsetFrame": 0,
+                "endOffsetFrame": 120,
+                "interpolator": {
+                    "interType": "accelerateDecelerate"
+                }
+            },
+            {
+                "property": "scale",
+                "startVal": "1",
+                "endVal": "0.01",
+                "startOffsetFrame": 0,
+                "endOffsetFrame": 60,
+                "interpolator": {
+                    "interType": "decelerate"
+                }
+            },
+            {
+                "property": "scale",
+                "startVal": "0.01",
+                "endVal": "1",
+                "startOffsetFrame": 60,
+                "endOffsetFrame": 120,
+                "interpolator": {
+                    "interType": "decelerate"
+                }
+            }
+        ]
+    }],
+}

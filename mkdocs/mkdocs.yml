@@ -16,6 +16,9 @@ nav:
         - 简单视频轨道: simple-video.md
     - 配置文件示例: 
         - 漂浮LOGO: examle-animation-logo.md
+        - 图片旋转: examle-image-rotate.md
+        - 旋转缩放: examle-rotate-scale.md
+        - fade-in: examle-fade-in.md
 
 theme:
     name: material

@@ -1,0 +1,47 @@
+{
+    "bgFile": "bg.jpg",
+    "width": 360,
+    "height": 480,
+    "fps": 24,
+    "frameCount": 120,
+    "outVideoFile":"fade-in.mp4",
+    "trackers": [{
+        "startFrame": 0,
+        "endFrame": 120,
+        "trackType": "simpleImage",
+        "initProperties": {
+            "videoAlignPtX": 0.5,
+            "videoAlignPtY": 0.5,
+            "trackerAlignPtX": 0.5,
+            "trackerAlignPtY": 0.5,
+            "alpha": 0,
+            "scale": 0.01,
+            "rotate": 0
+        },
+        "input": {
+            "image": "animation-logo.png"
+        },
+        "animation": [
+            {
+                "property": "alpha",
+                "startVal": "0",
+                "endVal": "1",
+                "startOffsetFrame": 0,
+                "endOffsetFrame": 36,
+                "interpolator": {
+                    "interType": "linear"
+                }
+            },
+            {
+                "property": "scale",
+                "startVal": "0.01",
+                "endVal": "1",
+                "startOffsetFrame": 0,
+                "endOffsetFrame": 36,
+                "interpolator": {
+                    "interType": "linear"
+                }
+            }
+        ]
+    }],
+}
