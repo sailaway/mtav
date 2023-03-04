@@ -174,7 +174,7 @@ MatPos TrackerBase::process(int offsetFrame,int videoW,int videoH){
     if (abs(_scale-1) > DOUBLE_MIN || abs(_rotate) > DOUBLE_MIN) {
         cv::Mat dst;
         double rotate = _rotate * M_PI / 180;
-        cv::Size dstSize = mat.size();//getFrontImgDstSize(mat.size(),_scale,rotate);
+        cv::Size dstSize = getFrontImgDstSize(mat.size(),_scale,rotate);
         planeTransformImage(mat, dstSize, dst, _scale, rotate);
         
         mat = dst;
