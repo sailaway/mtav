@@ -1,3 +1,5 @@
+# mtav项目代码已经转为在[gitee](https://gitee.com/iwangdean/mtav) 维护
+
 ![MTAV logo][logo]
 
 # [MTAV - 多轨道动画视频生成器][mtav-git]
